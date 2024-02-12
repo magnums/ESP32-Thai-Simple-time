@@ -29,7 +29,7 @@ void printLocalTime()
   thai_time = mktime(&timeinfo) + gmtOffset_sec; // Adjust for timezone
 
   // Calculate Thai day of the week
-  int thai_day = (timeinfo.tm_wday + 1) % 7; // Adjust for Thai day index
+  int thai_day = (timeinfo.tm_wday) % 7; // Adjust for Thai day index
 
   // Print Thai local time with year + 543
   Serial.printf("วัน%s, %02d %s %04d %02d:%02d:%02d\n", th_dayNames[thai_day], timeinfo.tm_mday, th_monthNames[timeinfo.tm_mon], timeinfo.tm_year + 1900 + 543, timeinfo.tm_hour, timeinfo.tm_min, timeinfo.tm_sec);
