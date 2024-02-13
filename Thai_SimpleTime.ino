@@ -2,8 +2,8 @@
 #include "time.h"
 #include "sntp.h"
 
-const char* ssid       = "PhayouneWIFI";
-const char* password   = "PhayounE2014";
+const char* ssid       = "your_ssid";
+const char* password   = "your_passwd";
 
 const char* ntpServer1 = "pool.ntp.org";
 const char* ntpServer2 = "time.nist.gov";
